@@ -41,4 +41,7 @@ The bot will reply with a random joke 🎉
 
 - node-telegram-bot-api  
 - axios  
-- dotenv  
+- dotenv
+
+##
+<img src="https://github.com/osmangonirabbi13/Telegram-Joke-Bot-NodeJs/blob/main/img.png" width="100%" />
