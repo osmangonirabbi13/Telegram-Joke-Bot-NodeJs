@@ -2,8 +2,13 @@ const TelegramBot = require("node-telegram-bot-api");
 require("dotenv").config();
 const token = process.env.TELEGRAM_TOKEN;
 const bot = new TelegramBot(token, { polling: true });
+const axios = require("axios");
 
-bot.on("message", (option) => {
-  //   console.log("hello my name is osman goni ", option);
-  bot.sendMessage(option.chat.id, "hello everyone i am osman goni rabbi ");
+bot.onText(/\/joke/, async (option) => {
+  const response = await axios.get(
+    "https://official-joke-api.appspot.com/random_joke"
+  );
+  const setup = response.data.setup;
+  const punchline = response.data.punchline;
+  bot.sendMessage(option.chat.id, setup + " , " + punchline);
 });
