@@ -18,8 +18,8 @@ It fetches random jokes from [Official Joke API](https://official-joke-api.appsp
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/telegram-joke-bot.git
-cd telegram-joke-bot
+git clone https://github.com/your-username/Telegram-Joke-Bot-NodeJs.git
+cd Telegram-Joke-Bot-NodeJs
 ```
 
 ---
